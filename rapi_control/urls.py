@@ -19,6 +19,7 @@ from rapi_control.views.index import *
 
 urlpatterns = [
     url(r'^calendar.html$',calendar,name='calendar'),
+    url(r'^index.html$',index,name='index'),
     url(r'^$',index,name='index'),
     url(r'^admin/', admin.site.urls),
 ]
