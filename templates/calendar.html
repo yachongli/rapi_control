@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- basic styles -->
-
+        {% load staticfiles %}
 		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 
@@ -18,11 +18,10 @@
 
 		<!-- page specific plugin styles -->
 
-		<link rel="stylesheet" href="assets/css/fullcalendar.css" />
+        <link rel="stylesheet" href="{% static 'css/fullcalendar.css' %}" />
 
 		<!-- fonts -->
 
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
 
 		<!-- ace styles -->
 
@@ -833,15 +832,6 @@
 		<!-- basic scripts -->
 
 		<!--[if !IE]> -->
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<![endif]-->
-
 		<!--[if !IE]> -->
 
 		<script type="text/javascript">
@@ -866,9 +856,9 @@
 
 		<script src="{% static "js/jquery-ui-1.10.3.custom.min.js" %}"></script>
 		<script src="{% static "js/jquery.ui.touch-punch.min.js" %}"></script>
-		<script src="assets/js/fullcalendar.min.js"></script>
-		<script src="assets/js/bootbox.min.js"></script>
 
+        <script src="{% static 'js/fullcalendar.min.js' %}s"></script>
+		<script src="{% static 'js/bootbox.min.js' %}"></script>
 		<!-- ace scripts -->
 
 		<script src="{% static "js/ace-elements.min.js" %}"></script>
