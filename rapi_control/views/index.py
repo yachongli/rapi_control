@@ -5,3 +5,4 @@ def index(request):
 
 def calendar(request):
     return render(request,'calendar.html',{})
+
